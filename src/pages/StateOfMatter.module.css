@@ -1,0 +1,30 @@
+.wrapper {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .buttons {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.wrapper .content {
+  justify-content: center;
+  width: 100%;
+}
+
+.buttons button:not(:first-child) {
+  margin-top: 20px;
+}
+
+.content .icon {
+  font-size: 100px;
+}
+
+.icon.active {
+}
+.icon.inactive {
+  opacity: 0.1;
+}
