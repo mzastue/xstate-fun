@@ -21,6 +21,7 @@ const StateOfMatter = () => {
           id="temp"
           type="number"
           value={changeTempBy}
+          min={1}
           onChange={(e) => setChangeTempBy(Number(e.target.value))}
         />
         <button onClick={() => send('HEAT', { value: changeTempBy })}>
